@@ -1,0 +1,26 @@
+
+.sortable {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sort-icon-img {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-image: url('../images/sort.png'); /* Default */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Classes to be toggled by jQuery */
+.asc .sort-icon-img {
+    background-image: url('../images/sort-up.png');
+}
+
+.desc .sort-icon-img {
+    background-image: url('../images/sort-down.png');
+}

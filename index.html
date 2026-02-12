@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOW</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="resources/css/style.css" rel="stylesheet" />
+</head>
+<body class="landing-screen">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Worklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border" href="#">Create Task</a>
+                    </li>
+                </ul>
+                <div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Task ID" aria-label="Search" />
+                        <button class="btn btn-outline-light w-50" type="submit">Find Task</button>
+                    </form>
+                </div>
+                <ul class="navbar-nav ms-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Advanced Search</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hi DEMO USER
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid pt-4">
+        <div class="row m-0">
+            <h2 class="h2 px-0">Worklist</h2>
+            <hr class="hr" />
+        </div>
+        <div class="col-2 mt-3 mb-5">
+            <select class="form-select form-select-sm" id="worklist" aria-label="Small select example">
+                <option value="My Tasks" selected>My Tasks</option>
+                <option value="CD Clarification Inventory (Assignment)">CD Clarification Inventory (Assignment)</option>
+                <option value="CD Clarification ~ Assigned to Me (User)">CD Clarification ~ Assigned to Me (User)</option>
+                <option value="CE Prescreen & Initial App Open Business Inventory ~ (VENDOR)">CE Prescreen & Initial App Open Business Inventory ~ (VENDOR)</option>
+                <option value="CE Prescreen & Initial App ~ Assigned to Me(User)">CE Prescreen & Initial App ~ Assigned to Me(User)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><input type="text" class="filter-input" data-col="0" placeholder="Filter Task ID..."></th>
+                    <th><input type="text" class="filter-input" data-col="1" placeholder="Filter Task Type..."></th>
+                    <th><input type="text" class="filter-input" data-col="2" placeholder="Filter Status..."></th>
+                    <th><input type="text" class="filter-input" data-col="3" placeholder="Filter Name..."></th>
+                </tr>
+                <tr>
+                    <th class="sortable" data-col="0">Task ID <span class="sort-icon-img"></span></th>
+                    <th class="sortable" data-col="1">Task Type <span class="sort-icon-img"></span></th>
+                    <th class="sortable" data-col="2">Status <span class="sort-icon-img"></span></th>
+                    <th class="sortable" data-col="3">Document Name <span class="sort-icon-img"></span></th>
+                </tr>
+            </thead>
+            <tbody id="taskTable">
+                <tr>
+                    <td><a href="#">111000222001</a></td>
+                    <td>Credentialing</td>
+                    <td>Clarification Response</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">111000222002</a></td>
+                    <td>Credentialing</td>
+                    <td>Clarification Response</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">111000222003</a></td>
+                    <td>Practitioner Addition</td>
+                    <td>Pending Review</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">111000222004</a></td>
+                    <td>Practitioner Addition</td>
+                    <td>Pending Review</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#">111000222005</a></td>
+                    <td>Practitioner Addition</td>
+                    <td>Pending Review</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/app.js"></script>
+</body>
+</html>
