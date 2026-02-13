@@ -241,6 +241,51 @@
     </div>
   </div>
 </div>
+
+<!-- viewNotesModal -->
+    <div class="modal" tabindex="-1" role="dialog" id="viewNotesModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Task Notes</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">History</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div>
+            <button class=" btn-dark border-0">Add Manual Note</button>
+          </div>
+          <div>
+            <button class=" btn-secondary border-0 mt-2">Add Note</button>
+          </div>
+          <div>
+            <button class="btn-secondary border-0 mt-2">Attachment</button>
+            <button class=" btn-secondary border-0 btn-sm mt-2">Manual</button>
+            <button class=" btn-secondary border-0 mt-2">Route</button>
+          </div>
+            <div class="mb-3 mt-5">
+              <label for="exampleFormControlTextarea1" class="form-label fw-bold">*Add Note</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+          <div>
+            <p class="fw-bold"></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+      </div>
+      </div>
     
     <script src="resources/js/jquery-3.6.0.min.js"></script>
     <script src="resources/js/bootstrap.bundle.min.js"></script>
@@ -248,5 +293,6 @@
 </body>
 
 </html>
+
 
 
